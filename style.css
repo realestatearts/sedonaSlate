@@ -667,7 +667,8 @@ body.home #menu-home-page {
 
 #content {
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden; 
+  background-color:#f5dcc2;}
 
 header.entry-header {
   margin: -32px 0 0 40px; }
@@ -928,15 +929,15 @@ footer#colophon {
     height: 90px;
     background: url(img/red-orange-bug.png) no-repeat 0 0; }
 
-.page-template-gellerypage-php #galleryindex {
+#galleryindex {
   margin-top: 30px; }
-  .page-template-gellerypage-php #galleryindex li {
+#galleryindex li {
     display: inline-block;
     float: left;
     width: 298px;
     margin: 0 0 0 14px;
     font-size: 18px; }
-    .page-template-gellerypage-php #galleryindex li a {
+#galleryindex li a {
       display: block;
       width: 298px;
       height: 698px;
@@ -944,17 +945,17 @@ footer#colophon {
       text-decoration: none;
       font-weight: bold;
       color: #fff; }
-      .page-template-gellerypage-php #galleryindex li a:hover {
+#galleryindex li a:hover {
         text-decoration: underline; }
-    .page-template-gellerypage-php #galleryindex li #residences-gallery-link {
+    li #residences-gallery-link {
       background: url(img/residences-gallery-large.jpg) no-repeat 0 0; }
-    .page-template-gellerypage-php #galleryindex li #amenities-gallery-link {
+#galleryindex li #amenities-gallery-link {
       background: url(img/amenities-gallery-large.jpg) no-repeat 0 0; }
-    .page-template-gellerypage-php #galleryindex li #neighborhood-gallery-link {
+#galleryindex li #neighborhood-gallery-link {
       background: url(img/neighborhood-gallery-large.jpg) no-repeat 0 0; }
-.page-template-gellerypage-php #galleryindex-small {
+#galleryindex-small {
   margin: 30px 0; }
-  .page-template-gellerypage-php #galleryindex-small li {
+#galleryindex-small li {
     display: block;
     float: right;
     clear: both;
@@ -962,7 +963,7 @@ footer#colophon {
     margin: 0 15px 15px;
     font-size: 14px;
     background: rgba(0, 0, 255, 0.2); }
-  .page-template-gellerypage-php #galleryindex-small a {
+#galleryindex-small a {
     padding: 3px 5px; }
 
 
@@ -1113,5 +1114,25 @@ a.nivo-nextNav {
   background-position: -244px -12px; }
 
 .entry-content {
-    margin: 2em 0 0 2.5em;
+	margin: 2em 0 0 2.5em;
+	font-size: 13px;  
   }
+  
+  #post-19 .entry-content {
+	margin: 40px 20px 0 0;
+	width: 40%;
+	float: right;
+	font-size: 13px;  
+  }
+  
+   #post-19 .entry-content h1 {
+	color: #000;
+	margin-left: -40px;
+	margin-top:20px;
+    }
+  
+  #hero-image-eco-centric img {
+	width: 530px;
+	float:left;
+    height: 746px;
+   }
