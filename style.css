@@ -3,14 +3,14 @@ Theme Name: Sedona
 Theme URI: http://www.sedona-slate.com
 Author: REA
 Author URI: http://www.realestatearts.com
-Description: Theme for Sedona-Slate.com/sedona ya
+Description: Theme for Sedona-Slate.com/sedona
 Version: 1.0
 
 */
 /* For HDPI (Retina) images
 usage:
 @include image-2x("logo2x.png", 100px, 25px); */
-/*	COLORS	*/
+/*  COLORS  */
 /* =Reset
 -------------------------------------------------------------- */
 
@@ -814,21 +814,21 @@ body.parent-pageid-15 a#just-the-facts {
   /* contact form */
   
   .medium gfield_select {
-	  font-size:1.3em !important;
-	  height:auto;
-	  outline:1px dotted orange;
+    font-size:1.3em !important;
+    height:auto;
+    outline:1px dotted orange;
   }
   
   #gform_submit_button_1 {
-	padding:15px 30px !important;
-	font-size:1.1em !important;
-	border:1px solid #ccc;
-	border-radius:5px;
-	color:#4d4d4d;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),inset 0 15px 17px rgba(255,255,255,0.8),inset 0 -5px 12px rgba(0,0,0,0.02);
+  padding:15px 30px !important;
+  font-size:1.1em !important;
+  border:1px solid #ccc;
+  border-radius:5px;
+  color:#4d4d4d;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),inset 0 15px 17px rgba(255,255,255,0.8),inset 0 -5px 12px rgba(0,0,0,0.02);
   }
 
 #directions-form {
@@ -1123,7 +1123,7 @@ a.nivo-nextNav {
   background-position: -244px -12px; }
 
 .entry-content {
-	font-size: 13px;  
+  font-size: 13px;  
   }
   
 /* Gravity Forms Stylings */
@@ -1149,14 +1149,14 @@ Slider
 *****************************/
 
 .outside {
-	position: absolute;
-	z-index: 999;
-	top: 400px;
-	left: 140px;
-	width:85%;
-	}
-	
-.outside h3 {display:none;}	
+  position: absolute;
+  z-index: 999;
+  top: 400px;
+  left: 140px;
+  width:85%;
+  }
+  
+.outside h3 {display:none;} 
 
 .bx-wrapper .bx-pager {
 text-align: center;
@@ -1171,13 +1171,14 @@ overflow: auto;
 left: 400px;
 
 }
-	
+  
 .bx-wrapper img {margin-left:-24px;}
 
 .bxslider p {
-	margin:2em 0 0 .8em;
-	font-size:.9em;
-	}
+  margin: 2em 0 0 0;
+  font-size:.9em;
+  width: 96%;
+}
 
 /*right*/
 .bx-prev {
@@ -1189,8 +1190,8 @@ background: url("img/sedona-sprite.png") no-repeat scroll -112px -15px transpare
     text-indent: 100%;
     white-space: nowrap;
     width: 33px;
-	
-	
+  
+  
 
 }
 
@@ -1205,9 +1206,9 @@ background: url("img/sedona-sprite.png") no-repeat scroll -250px -15px transpare
     text-indent: 100%;
     white-space: nowrap;
     width: 32px;
-	float:right;
-	
-	
+  float:right;
+  
+  
 }
 
 /* menu boxes */
@@ -1221,7 +1222,7 @@ background: url("img/sedona-sprite.png") no-repeat scroll -250px -15px transpare
     outline: 0px none;
     border-radius: 0 !important;
 }
-		
+    
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: none repeat scroll 0 0 #BD292C !important;
 }
@@ -1242,92 +1243,98 @@ Media Queries
 *****************************/
 
 
-
-/* Smartphones */
-@media screen 
-and (min-width : 320px) 
-and (max-width : 480px) {  
-
+/****************************** Landscape phones and down **************************/
+ @media (max-width: 480px) { 
+ 
 .site-navigation {
-	display:none;
-	}
+  display:none;
+  	}
 
 #main {
-	float:left;
-	width:100%;
-	border:0;
-}
+  float:left;
+  width:100%;
+  border:0;
+	}
 
 .site-info {
-	display:none;
+  display:none;
+  	}
+
+#masthead .site-description {
+  margin:0; padding:0;
+  }
+   
+h2.site-description {
+  display:none; 
+}
+
+/*test width*/
+h1 {
+  color:green !important;
+  	} 
+ 
+ 
+  }
+
+/********************** Landscape phone to portrait tablet ****************/
+ @media (max-width: 767px) { 
+ 
+#main {
+  float:right;
+  width:80%;
+  border:0;
 	}
 
-.bx-wrapper img {
-	height:300px;
-	}	
-
-/*text*/
-h1 {
-	color:green !important;
-	}	
 #masthead .site-description {
 	margin:0; padding:0;
-	}	
-h2.site-description	{
-	display:none;	
-}
-}
-
-/* Smartphones and Tablets */
-@media screen 
-and (min-width : 481px) 
-and (max-width : 768px) {  
-h1 {color:orange !important;}	
-#main {
-	float:right;
-	width:80%;
-	border:0;
-}
-
-#masthead .site-description {margin:0; padding:0;}
-}
-
-
-
-/* Tablets (portrait and landscape) */
-
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) {
-
-
-footer#colophon #bug {
-	display:none;
-	}	
-#main {
-	width:78%;
 	}
-.bx-wrapper img {height:400px;}	
-
-}
-
-
- 
-
- 
-/* All */
-@media (max-width: 1120px) { 
-#page {
-	width:100%;
-	}	
 	
-	footer#colophon #bug 
-	{
-	display:none;
-	}
-}
+/* testing */	
+h1 {
+	color:blue !important;
+	} 	
+ 
+ }
+
+/*************** Portrait tablet to landscape and desktop *****************/
+ @media (min-width: 768px) and (max-width: 979px) { 
+ 
+footer#colophon #bug {
+  display:none;
+  } 
+#main {
+  width:78%;
+  }
+ 
+ /* testing */
+ h1 {
+	color:yellow !important;
+	}  
+
+ }
+
+/************************** Large desktop *******************************/
+ @media (min-width: 1200px) { ... }
+ 
+ 
+ /* All */
+@media (max-width: 1120px) { 
+
+#page {
+  width:100%;
+  } 
+footer#colophon #bug 
+  {
+  display:none;
+  }
+ 
+ 
+ 
+ 
  
 
 
+
+ 
 
 
