@@ -3,7 +3,7 @@ Theme Name: Sedona
 Theme URI: http://www.sedona-slate.com
 Author: REA
 Author URI: http://www.realestatearts.com
-Description: Theme for Sedona-Slate.com/sedona
+Description: Theme for Sedona-Slate.com/sedona ya
 Version: 1.0
 
 */
@@ -1242,18 +1242,9 @@ Media Queries
 *****************************/
 
 
-/* Tablets */
-@media (min-width: 768px) and (max-width: 959px) {
-
-#page {
-	width:100%;
-	}
-
-
-}
 
 /* Smartphones */
-@media (max-width: 480px) {  
+@media (min-width: 320px) and (max-width: 480px) {  
 
 .site-navigation {
 	display:none;
@@ -1276,11 +1267,30 @@ footer#colophon #bug {
 	}
 
 }
- 
+
 /* Smartphones to Tablets */
 @media (min-width: 481px) and (max-width: 767px) {
 #page {width:100%;}
+footer#colophon #bug {
+	display:none;
+	}
+#main {width:78%;}	
 }
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 959px) {
+
+#page {
+	width:100%;
+	overflow:hidden;
+	}
+footer#colophon #bug {
+	display:none;
+	}	
+#main {width:78%;}	
+}
+ 
+
  
 /* Desktop */
 @media (min-width: 960px) and (max-width: 1199px) { 
