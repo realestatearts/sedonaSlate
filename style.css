@@ -538,13 +538,10 @@ footer {
 
 .main-navigation {
   width: 11.25%;
-  height: 545px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
-  clear: both;
-  display: block;
   float: left; }
 
 .menu-main-menu-container {
@@ -671,7 +668,12 @@ body.home #menu-home-page {
   background-color:#f5dcc2;}
 
 header.entry-header {
-  margin: -32px 0 0 40px; }
+  left: 11em;
+  position: absolute;
+  top: 8em;
+  z-index: 3;
+  }
+  
   header.entry-header h1 {
     font-size: 16px;
     color: #fff; }
@@ -804,10 +806,6 @@ a.button:visited {
 body.parent-pageid-15 a#just-the-facts {
   display: none; }
 
-#map {
-  width: 968px;
-  height: 545px; }
-  
   /* contact form */
   
   .medium gfield_select {
@@ -1089,6 +1087,12 @@ footer#colophon {
   display: none; }
 
 /* Direction nav styles (e.g. Next & Prev) */
+.bx-next {
+  background: url(img/sedona-sprite.png) no-repeat 111px 12px;
+  height: 44px;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
 .nivo-directionNav a {
   position: absolute;
   top: 45%;
@@ -1114,25 +1118,23 @@ a.nivo-nextNav {
   background-position: -244px -12px; }
 
 .entry-content {
-	margin: 2em 0 0 2.5em;
 	font-size: 13px;  
   }
   
-  #post-19 .entry-content {
-	margin: 40px 20px 0 0;
-	width: 40%;
-	float: right;
-	font-size: 13px;  
-  }
-  
-   #post-19 .entry-content h1 {
-	color: #000;
-	margin-left: -40px;
-	margin-top:20px;
-    }
-  
-  #hero-image-eco-centric img {
-	width: 530px;
-	float:left;
-    height: 746px;
-   }
+/* Gravity Forms Stylings */
+#field_1_7 /*email*/{
+  float: right;
+  margin: -5em 13em 0 0;
+  width: 300px;
+}
+#field_1_8 /*moveindate*/{
+  float: right;
+  margin: 0 13em 0 0;
+  width: 300px;
+}
+#input_1_8 /*moveindate entry*/{
+  width: 450px !important;
+}
+.gform_wrapper ul li.gfield {
+  clear:none !important;
+}
