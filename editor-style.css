@@ -1,0 +1,4 @@
+* {font-family: Helvetica, Arial, sans-serif;}
+
+
+div, section, #tabcontent li , #galleryindex, #slider-wrapper, #slider {border:1px dotted red;padding:2%;}

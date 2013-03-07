@@ -1,0 +1,12 @@
+body.login {text-shadow:none;background:#3c3e43;}
+
+.login h1 a {margin-bottom:20px;background: url(img/sedona-logo.png) no-repeat center center;}
+
+.login #nav a, .login #backtoblog a {color:#00b0e8 !important;text-shadow:none;}
+
+.login form {box-shadow: 0 0 24px #262626}
+
+input.button-primary, button.button-primary, a.button-primary {
+color: #000;text-shadow:0 1px 0 #fff;border:1px solid #deeef2;box-shadow:0 2px 3px #999;
+background:url(images/pres/cbot-sprites.png)no-repeat -22px -81px;background:rgba(31,190,238);border-radius:3px;font-weight:normal;
+}
