@@ -1244,13 +1244,9 @@ Media Queries
 
 
 /* Smartphones */
-<<<<<<< HEAD
-@media (min-width: 320px) and (max-width: 480px) {  
-=======
 @media screen 
 and (min-width : 320px) 
 and (max-width : 480px) {  
->>>>>>> first
 
 .site-navigation {
 	display:none;
@@ -1315,37 +1311,8 @@ footer#colophon #bug {
 
 }
 
-<<<<<<< HEAD
-/* Smartphones to Tablets */
-@media (min-width: 481px) and (max-width: 767px) {
-#page {width:100%;}
-footer#colophon #bug {
-	display:none;
-	}
-#main {width:78%;}	
-}
-
-/* Tablets */
-@media (min-width: 768px) and (max-width: 959px) {
-
-#page {
-	width:100%;
-	overflow:hidden;
-	}
-footer#colophon #bug {
-	display:none;
-	}	
-#main {width:78%;}	
-}
- 
 
  
-/* Desktop */
-@media (min-width: 960px) and (max-width: 1199px) { 
-=======
-
- 
->>>>>>> first
 
  
 /* All */
@@ -1360,5 +1327,7 @@ footer#colophon #bug {
 	}
 }
  
+
+
 
 
