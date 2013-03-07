@@ -13,6 +13,8 @@ usage:
 /*	COLORS	*/
 /* =Reset
 -------------------------------------------------------------- */
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -764,8 +766,12 @@ a.button:visited {
 .one-third {
   width: 31%; }
 
+/* 2 columns style */
 .one-half {
-  width: 48%; }
+  width: 47%;
+  font-size:.9em;
+  margin-top:20px;
+  }
 
 #section-nav {
   width: 15%;
@@ -799,7 +805,7 @@ a.button:visited {
 
 #just-the-facts {
   clear: both;
-  margin: 78px 0 0;
+  margin-bottom:40px;
   width: 80%; }
 
 body.parent-pageid-15 a#just-the-facts {
@@ -1137,3 +1143,149 @@ a.nivo-nextNav {
 .gform_wrapper ul li.gfield {
   clear:none !important;
 }
+
+/****************************
+Slider
+*****************************/
+
+.outside {
+	position: absolute;
+	z-index: 999;
+	top: 400px;
+	left: 140px;
+	width:85%;
+	}
+	
+.outside h3 {display:none;}	
+
+.bx-wrapper .bx-pager {
+text-align: center;
+font-size: .85em;
+font-family: Arial;
+font-weight: bold;
+color: #666;
+padding-top: 20px;
+position: absolute;
+bottom: 20px;
+overflow: auto;
+left: 400px;
+
+}
+	
+.bx-wrapper img {margin-left:-24px;}
+
+.bxslider p {
+	margin:2em 0 0 .8em;
+	font-size:.9em;
+	}
+
+/*right*/
+.bx-prev {
+background: url("img/sedona-sprite.png") no-repeat scroll -112px -15px transparent;
+    display: block;
+    float: left;
+    height: 32px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 33px;
+	
+	
+
+}
+
+
+/*left*/
+.bx-next {
+background: url("img/sedona-sprite.png") no-repeat scroll -250px -15px transparent;
+    display: block;
+    float: left;
+    height: 32px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 32px;
+	float:right;
+	
+	
+}
+
+/* menu boxes */
+.bx-wrapper .bx-pager.bx-default-pager a {
+ background: none repeat scroll 0% 0% rgb(183, 167, 149);
+    text-indent: -9999px;
+    display: block;
+    width: 18px !important;
+    height: 13px !important;
+    margin: 0px 5px;
+    outline: 0px none;
+    border-radius: 0 !important;
+}
+		
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: none repeat scroll 0 0 #BD292C !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: none repeat scroll 0 0 #666666;
+    border-radius: 0;
+    display: block;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0 none;
+    text-indent: -9999px;
+    width: 10px;
+}
+
+
+/****************************
+Media Queries
+*****************************/
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 959px) {
+
+#page {
+	width:100%;
+	}
+
+
+}
+
+/* Smartphones */
+@media (max-width: 480px) {  
+
+.site-navigation {
+	display:none;
+	}
+
+#main {
+	float:left;
+	width:100%;
+	border:0;
+}
+
+.site-info {
+	display:none;
+	}
+footer#colophon #bug {
+	display:none;
+	}
+#page {
+	width:100%;
+	}
+
+}
+ 
+/* Smartphones to Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+#page {width:100%;}
+}
+ 
+/* Desktop */
+@media (min-width: 960px) and (max-width: 1199px) { 
+
+}
+ 
+
+
