@@ -1,4 +1,4 @@
-  <h1 class="pageTitle"><?php the_title(); ?></h1>
+	<h1 class="pageTitle"><?php the_title(); ?></h1>
 		<?php the_content(); ?>
 
 
@@ -31,20 +31,21 @@ asdf
 
 
 
-
+ <?php if( get_post_meta($post->ID, 'content', true) )  { ?>
+ <div class="item">
 			<?php $image = get_post_meta($post->ID, 'image', false); ?>
 
 			<?php foreach($image as $image) {
-				echo '	<div class="item"><img src="'.$image.'">';
+				echo '	<img src="'.$image.'">';
 				} ?>
 
 			<?php $content = get_post_meta($post->ID, 'content', false); ?>
 
 			<?php foreach($content as $content) {
-				echo ''.$content.'</div>';
+				echo ''.$content.$image.'</div> <div class="item">';
 				} ?>
 
-
+<?php } ?>
 </div>
 
 
