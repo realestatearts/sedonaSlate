@@ -247,7 +247,7 @@ a:active {
   display:block;
   }
 .navbar .nav {
-  display: none; 
+	display: none; 
 }
   
 /* social media */
@@ -283,7 +283,7 @@ ul#social-media {
 /* =Menu
 ----------------------------------------------- */
 .span2 {
-	background: red;
+	background: #bd292c;
 	float: left !important;
 	width: 178px !important;
 }
