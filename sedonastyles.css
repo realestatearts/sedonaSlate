@@ -1,4 +1,4 @@
-/*
+/* 
 Theme Name: Sedona
 Theme URI: http://www.sedona-slate.com
 Author: REA
@@ -669,7 +669,7 @@ li #residences-gallery-link {
   font-weight: normal;
   opacity: 0.45;
   overflow: hidden;
-  display: none;
+  /* display: none; */
   -moz-opacity: 0.45;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -728,20 +728,34 @@ a.nivo-nextNav {
   
 /* Gravity Forms Stylings */
 #field_1_7 /*email*/{
-  float: right;
+/*  float: right;
   margin: -5em 13em 0 0;
-  width: 300px;
+  width: 300px;*/
 }
 #field_1_8 /*moveindate*/{
-  float: right;
+/*  float: right;
   margin: 0 13em 0 0;
-  width: 300px;
+  width: 300px;*/
 }
 #input_1_8 /*moveindate entry*/{
-  width: 450px !important;
-}
+/*  width: 450px !important;
+*/}
 .gform_wrapper ul li.gfield {
-  clear:none !important;
+/*  clear:none !important;*/
+}
+
+/* Contact Form */
+
+.gform_wrapper .top_label textarea.textarea {
+background-color:#fff;
+}
+
+.gform_wrapper .top_label select.medium {
+background-color:#fff;
+}
+
+.gform_wrapper .ginput_complex .ginput_right select {
+background-color:#fff;
 }
 
 /****************************
@@ -860,7 +874,6 @@ filter: alpha(opacity=50);
 
 
 
-
 /* hide search */
 .navbar-search {
 	display:none;
@@ -887,8 +900,10 @@ background-color:#bd292c;
 	
 /* left menu */	
 #nav_menu-2 {
-	margin-bottom: -10000px; padding-bottom: 10000px;
+	margin-bottom: -10000px; 
+	padding-bottom: 10000px;
 	width:180px;
+	
 	}
 
 /* left menu link style */	
