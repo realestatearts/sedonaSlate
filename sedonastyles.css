@@ -1,0 +1,1044 @@
+/*
+Theme Name: Sedona
+Theme URI: http://www.sedona-slate.com
+Author: REA
+Author URI: http://www.realestatearts.com
+Description: Theme for Sedona-Slate.com/sedona
+Version: 1.0
+*/
+/* For HDPI (Retina) images
+usage:
+@include image-2x("logo2x.png", 100px, 25px); */
+/*  COLORS  */
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+input { 
+  font-size: 1.5em !important;
+  padding: 3px !important;
+}
+
+select {
+    padding:20px;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* =Global
+----------------------------------------------- */
+body,
+button,
+input,
+select,
+textarea {
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden; 
+  background-color:#3c3e43;
+  }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  color: #bd292c;
+  text-transform: uppercase; }
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #000; }
+
+h2 {
+  font-weight: normal;
+  font-size: 24px;
+  font-size: 2.4rem;
+  letter-spacing: 0.05em; }
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+h4 {
+  color: #000;
+  font-weight: bold; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* Text elements */
+p {
+  margin-bottom: 1.5em; }
+
+ul, ol {
+  margin: 0 0 1.5em 1.5em; }
+
+ul {
+  list-style: square;
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABdJREFUeNpi3Kupw4ABmBiwAfqKAgQYAKgRASBYa4+9AAAAAElFTkSuQmCC); }
+
+
+
+
+/* Links */
+a:link, a:visited {
+  color: #000;
+  text-decoration: none; }
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none; }
+
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+
+/* start coding */
+
+#wrapper {
+  background: #3c3e43;
+  min-width: 100%;
+  max-width: 1100px;
+   }
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  position: relative;
+  padding: 0 30px;
+  overflow:hidden;si
+}
+
+#header {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA50AAABaCAIAAAC0S6WMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgJJREFUeNrs1k0KAXEcx2EzWXgpdrIRSbJyB5excgqHsbK2cgEXkJILWNh4y8sM24mkKDV6nuWvWX3r33yCZaOTSbPWZPFwucyrGdLvUBtEhdbbz/LhOB+MzZUiu1Hj+ZjrtS3zlev+tl2Z4ZWgeM7WN8lLtM4dp34WfPTaev240kxeSuEwG8wt83vxpnyadZOX0CgAAPwBXQsAgK4FAABdCwAAuhYAAHQtAAC6FgAAdC0AAOhaAADQtQAA6FoAANC1AACgawEAQNcCAKBrAQBA1wIAgK4FAABdCwCArgUAAF0LAAC6FgAAdC0AALoWAAB0LQAA6FoAANC1AADoWgAA0LUAAKBrAQBA1wIAgK4FAEDXAgCArgUAAF0LAAC6FgAAXQsAALoWAAB0LQAA6FoAAHQtAADoWgAA0LUAAKBrAQDQtQAAoGsBAEDXAgCArgUAQNcCAICuBQAAXQsAALoWAABdCwAAuhYAAHQtAADoWgAA0LUAAOhaAADQtQAAoGsBAEDXAgCgawEAQNcCAICuBQAAXQsAgK4FAABdCwAAuhYAAHQtAAC6FgAAdC0AAOhaAADQtQAA6FoAANC1AACgawEAQNcCAKBrAQBA1wIAgK4FAABdCwAAuhYAAF0LAAC6FgAAdC0AAOhaAAB0LQAA6FoAANC1AACgawEA+Gd3AQYAWi0edG5ZIP8AAAAASUVORK5CYII=) repeat 0 0;
+  background-size: 100% 100%; }
+  #header .site-title {
+    width: 59px;
+    height: 44px; }
+    #header .site-title a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(data:image/png;base64,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) no-repeat 0 0;
+      background-image: none, url("img/sedona-logo.svg"), url("img/sedona-logo.png");
+      background-size: 100% 100%; }
+.address {
+    font-size: 11px;
+}
+
+#header {
+  border-bottom: 10px solid #f5dcc2;
+  height: 88px;
+  background-position: 132px 0;
+  background-size: 100% 100%; 
+}
+  #header .site-title {
+    width: 125px;
+    height: 88px;
+    float: left;
+    border-right: 7px solid #f37c20;
+    background: #bd292c; 
+  background: url("img/sedona-logo.svg") top left no-repeat;
+  text-indent: -9999px;
+  display:block;
+  }
+.navbar .nav {
+  display: none; 
+}
+  
+/* social media */
+
+ul#social-media {
+  float: right;
+    list-style: none;
+  width:50px; 
+  margin-top:20px;
+
+}
+
+.twitter  {
+      
+      width: 20px;
+      height: 20px;
+      background: url(img/sedona-sprite.png) -21px -186px no-repeat;
+    text-indent: -9999px;
+    display:block;
+    float:left;
+    }
+  
+.facebook {
+  background: url(img/sedona-sprite.png) -21px -224px no-repeat;
+  text-indent: -9999px;
+    display:block;
+    float:left;
+     width:20px;
+    height:20px;
+    }
+
+
+/* =Menu
+----------------------------------------------- */
+.span2 {
+	background: red;
+	float: left !important;
+	width: 178px !important;
+}
+
+.span10 {
+	float: right;
+	margin: 0 -178px 0 0 !important;
+	width: 100%;
+}
+
+.menu-main-menu-container {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#menu-main-menu-1 li.current_page_item a, #menu-main-menu-1 li.current-menu-item a, #menu-main-menu-1 li.current-menu-parent a {
+color: #ffd600;
+font-weight: bold;
+}
+
+.main-navigation ul a {
+  color: #f5dcc2;
+  display: block;
+  text-decoration: none; 
+  }
+  .main-navigation ul a:hover {
+	text-decoration: underline; 
+	}
+
+.main-navigation li {
+    line-height: 2; }
+	
+/* bottom-menu */	
+#menu-second-menu {
+	position:absolute;
+	bottom:10px;
+	width:160px;
+	}
+
+#menu-item-857 a {
+	display: inline-block;
+	width: 100px;
+	height: 28px;
+	background: url("img/sedona-sprite.png") no-repeat 30px -16px;
+	text-indent: -999px;
+	overflow: hidden;
+	}
+
+
+#menu-item-855 a {
+	display: inline-block;
+	width: 100px;
+	height: 28px;
+	background: url("img/sedona-sprite.png") no-repeat 30px -76px;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+
+
+#menu-item-890 a {
+display: inline-block;
+	width: 100px;
+	height: 28px;
+	background: url("img/sedona-sprite.png") no-repeat 30px -138px;
+	text-indent: -999px;
+	overflow: hidden;
+	float:left;
+	}
+	
+#menu-item-856 a {color:#ffffff;
+text-transform: uppercase;
+color: #fff;
+font-size: 10px;
+font-weight: bold;
+text-decoration: none;
+float:left;
+font-size:11px;
+margin-left:10px;
+}
+
+	
+/* =Layout
+----------------------------------------------- */
+
+#just-the-facts {
+  display: none; }
+
+
+#bug {
+  display: none; }
+
+
+#just-the-facts {
+  display: block; }
+
+
+#header {
+  border-bottom: 10px solid #edd3a8;
+  height: 88px;
+  background-position: 132px 0;
+  background-size: auto; }
+  #header .site-title {
+    width: 15%;
+    height: 88px;
+    float: left;
+    border-right: 7px solid #f37c20; 
+    background: #bd292e;
+}
+  #header .address {
+    float: right;
+    color: #bd292c; }
+
+
+
+
+
+.pageTitle {
+    font-size: 16px;
+    color: #fff; }
+
+
+a.button {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  background: #f37c20;
+  webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 1; }
+
+a.button:hover {
+  color: #ccc; }
+
+a.button:visited {
+  color: #fff; }
+
+.sidestep {
+  background: #f5dcc2;
+  width: 85%;
+  float: left;
+}
+/* columns for responsive */
+
+.one-third {
+  width: 31%; 
+  float:left;}
+
+.one-half {
+  width: 47%;
+  font-size:.9em;
+  margin-top:20px;
+  float:left;
+  }
+
+#section-nav {
+  width: 15%;
+  float: right; }
+
+
+#just-the-facts {
+  clear: both;
+  margin-bottom:40px;
+  width: 80%; }
+
+
+  /* contact form */
+  
+  .medium gfield_select {
+    font-size:1.3em !important;
+    height:auto;
+    outline:1px dotted orange;
+  }
+  
+  #gform_submit_button_1 {
+  padding:15px 30px !important;
+  font-size:1.1em !important;
+  border:1px solid #ccc;
+  border-radius:5px;
+  color:#4d4d4d;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),inset 0 15px 17px rgba(255,255,255,0.8),inset 0 -5px 12px rgba(0,0,0,0.02);
+  }
+
+
+/* footer */
+
+footer {
+  width: 11.25%; 
+}
+
+
+  footer a#privacy {
+    margin-left: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none; }
+  footer a#jbg-link {
+    display: inline-block;
+    width: 100%;
+    height: 28px;
+    background: url("img/sedona-sprite.png") no-repeat 30px -16px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+
+
+  footer #equal-housing, footer #sec508 {
+    display: block;
+    width: 100%;
+    height: 28px;
+    background: url(img/sedona-sprite.png) no-repeat; 
+	}
+  
+  footer#colophon #equal-housing {
+    background-position: 30px -76px; 
+	}
+  
+  footer#colophon #sec508 {
+    background-position: 30px -138px; 
+	}
+  
+  footer#colophon #bug {
+    display: block;
+    position: absolute;
+    top: 659px;
+    left: 100px;
+    width: 57px;
+    height: 90px;
+    background: url(img/red-orange-bug.png) no-repeat 0 0; 
+	}
+
+/*gallery page columns */
+
+#galleryindex {
+  margin-top: 30px;
+  float:left;
+  width:120%; 
+  margin-left:-150px;
+  }
+  
+#galleryindex li {
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 14px;
+	width:31%;
+    font-size: 18px; 
+	}
+	
+#galleryindex li a {
+      display: block;
+      padding: 20px 0 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff; 
+	  -webkit-background-size:100%;
+	  -moz-background-size:100%;
+	   background-size: 100%; 
+	   min-height:600px; 
+	  }
+	  
+#galleryindex li a:hover {
+        text-decoration: underline; 
+		}
+		
+li #residences-gallery-link {
+      background: url(img/residences-gallery-large.jpg) no-repeat 0 0;
+	  background-size: 100%;  
+	  }
+	  
+#galleryindex li #amenities-gallery-link {
+      background: url(img/amenities-gallery-large.jpg) no-repeat 0 0; 
+	  background-size: 100%; 
+	  }
+	  
+#galleryindex li #neighborhood-gallery-link {
+      background: url(img/neighborhood-gallery-large.jpg) no-repeat 0 0; 
+	  background-size: 100%; 
+	  }
+#galleryindex-small {
+  margin: 30px 0; 
+  	}
+  
+#galleryindex-small li {
+    display: block;
+    float: right;
+    clear: both;
+    width: auto;
+    margin: 0 15px 15px;
+    font-size: 14px;
+    background: rgba(0, 0, 255, 0.2); 
+	}
+	
+#galleryindex-small a {
+    padding: 3px 5px; 
+	}
+
+
+
+
+
+
+
+
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* The Nivo Slider styles */
+.nivoSlider {
+  position: relative;
+  width: 968px;
+  height: 545px;
+  overflow: hidden; }
+
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 968px;
+  display: none; }
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none; }
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0; }
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden; }
+
+.nivo-box img {
+  display: block; }
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  background: #fff;
+  color: #000;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 30px;
+  font-weight: normal;
+  opacity: 0.45;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.45;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+.no-opacity .nivo-caption {
+  background: url(img/45-trans-white.png) repeat 0 0; }
+
+.nivo-caption p {
+  padding: 5px;
+  margin: 0; }
+
+.nivo-caption a {
+  display: inline !important; }
+
+.nivo-html-caption {
+  display: none; }
+
+/* Direction nav styles (e.g. Next & Prev) */
+.bx-next {
+  background: url(img/sedona-sprite.png) no-repeat 111px 12px;
+  height: 44px;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+  display: block;
+  width: 36px;
+  height: 36px;
+  float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(img/sedona-sprite.png) no-repeat; }
+
+a.nivo-prevNav {
+  left: 0px;
+  margin-left: 30px;
+  background-position: -111px -12px; }
+
+a.nivo-nextNav {
+  right: 0px;
+  margin-right: 30px;
+  background-position: -244px -12px; }
+
+.entry-content {
+  font-size: 13px;  
+  }
+  
+/* Gravity Forms Stylings */
+#field_1_7 /*email*/{
+  float: right;
+  margin: -5em 13em 0 0;
+  width: 300px;
+}
+#field_1_8 /*moveindate*/{
+  float: right;
+  margin: 0 13em 0 0;
+  width: 300px;
+}
+#input_1_8 /*moveindate entry*/{
+  width: 450px !important;
+}
+.gform_wrapper ul li.gfield {
+  clear:none !important;
+}
+
+/****************************
+Slider
+*****************************/
+.outside h3 {display:none;} 
+
+.bx-wrapper .bx-pager {
+text-align: center;
+font-size: .85em;
+font-family: Arial;
+font-weight: bold;
+color: #666;
+padding-top: 20px;
+position: absolute;
+bottom: 20px;
+overflow: auto;
+left: 400px;
+
+}
+  
+.bx-wrapper img {margin-left:-24px;}
+
+.bxslider p {
+  margin: 2em 0 0 0;
+  font-size:.9em;
+  width: 96%;
+}
+
+/*right*/
+.bx-prev {
+background: url("img/sedona-sprite.png") no-repeat scroll -112px -15px transparent;
+    display: block;
+    float: left;
+    height: 32px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 33px;
+  
+  
+
+}
+
+
+/*left*/
+.bx-next {
+background: url("img/sedona-sprite.png") no-repeat scroll -250px -15px transparent;
+    display: block;
+    float: left;
+    height: 32px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 32px;
+  float:right;
+  
+  
+}
+
+/* menu boxes */
+.bx-wrapper .bx-pager.bx-default-pager a {
+ background: none repeat scroll 0% 0% rgb(183, 167, 149);
+    text-indent: -9999px;
+    display: block;
+    width: 18px !important;
+    height: 13px !important;
+    margin: 0px 5px;
+    outline: 0px none;
+    border-radius: 0 !important;
+}
+    
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: none repeat scroll 0 0 #BD292C !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: none repeat scroll 0 0 #666666;
+    border-radius: 0;
+    display: block;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0 none;
+    text-indent: -9999px;
+    width: 10px;
+}
+
+.nav-container {
+  	background: url('img/header-bg.png') 0 0 repeat;
+  	overflow: auto;
+	width: 970px;
+	padding: 0;
+
+}
+
+
+.carousel-control {
+position: absolute;
+top: 40%;
+left: 15px;
+width: 40px;
+height: 40px;
+margin-top: -20px;
+font-size: 60px;
+font-weight: 50;
+line-height: 30px;
+color: #ffffff;
+text-align: center;
+background: #ffffff;
+opacity: 0.5;
+filter: alpha(opacity=50);
+}
+
+.carousel-control a:hover {
+	border:2px solid red;
+}
+
+
+
+
+/* hide search */
+.navbar-search {
+	display:none;
+	}
+	
+/* style logo */	
+.navbar .brand {
+float: left;
+width:138px;
+height:70px;
+margin:0;
+display:block;
+background:url("img/sedona-logo.png") 20px 0 no-repeat;
+text-indent:-9990px;
+background-color:#bd292c;
+}
+
+
+
+/* top left menu */
+.menu-main-menu-container {
+	margin-top: 120px;
+	}
+	
+/* left menu */	
+#nav_menu-2 {
+	margin-bottom: -10000px; padding-bottom: 10000px;
+	width:180px;
+	}
+
+/* left menu link style */	
+#nav_menu-2 a {
+	color: #f5dcc2;
+    display: block;
+	text-decoration:none;
+	}
+	
+/* bottom menu */	
+.menu-second-menu-container	{
+	position:absolute;
+	bottom:15px;
+}
+
+/* content container */	
+#content {
+	background-color:#f5dcc2;
+	overflow:hidden;
+	position:relative;
+	}
+	
+.navbar,.navbar-inner {
+	background: none;	
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+/****************************
+Media Queries
+*****************************/
+
+
+/****************************** Landscape phones and down **************************/
+ @media screen and (max-width: 480px) { 
+ 
+.site-info {
+  
+    }
+.col {
+  width: 100%;
+}
+
+#galleryindex li {
+	width:29%;
+}
+
+#galleryindex li a {
+	height:200px;
+}
+
+}
+
+.navbar-fixed-top, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	margin: 0;
+	padding: 0;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width : 768px) {
+/* Styles */
+.address {
+  display:none; 
+}
+.main-navigation {
+  display:none;
+    }
+	
+.sidestep {
+  margin: 0;
+  width: 100%;
+}
+
+.col {
+	width:100%;
+  }
+
+}
+
+/* this is where Twitter Bootstrap switches menu's so let's help -----------*/
+@media only screen and (max-width: 768px) {
+	.container-fluid {
+	margin:0; 
+	padding:0;	
+	width:100%;
+	}
+	.row-fluid .span8 {
+    width: 100%;
+  }
+  .menu-main-menu-container {
+  display: none;
+	}
+	
+	#nav_menu-2 {
+		margin:0;
+		padding:0;
+	}
+	/* bottom menu */	
+.menu-second-menu-container	{
+	display:none;
+}
+
+ #menu-main-menu {
+	 background-color:#bd292c;
+	 box-shadow:none;	
+	  }
+ #menu-main-menu a {
+	 color: rgb(245, 220, 194);
+	 text-shadow:none;
+	 font:normal .8em Arial;
+	 text-transform:uppercase;
+	 background-color:#bd292c;
+	  }	
+
+#menu-main-menu a:hover {
+	background-color:#f27c21;
+	}	    
+ 
+#menu-main-menu > .active > a, #menu-main-menu > .active > a:hover, #menu-main-menu > .active > a:focus {
+	box-shadow:none;
+}
+
+#galleryindex {
+	margin:0;
+	width:100%;
+	}
+	
+#galleryindex li a {
+	height:400px;
+}
+
+.page-header {
+	margin:0;
+}
+.navbar .nav {
+	display: inline;
+}
+.navbar-fixed-top, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	margin: 0;
+	padding: 0;
+}
+
+
+}
+
+
