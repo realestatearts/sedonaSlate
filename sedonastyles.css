@@ -443,7 +443,7 @@ a.button:visited {
 /* columns for responsive */
 
 .one-third {
-  width: 29%;
+	width: 29%;
 	float: left;
 	margin-left: 1.5em;
 	margin-top: 20px;
@@ -452,7 +452,6 @@ a.button:visited {
 
 .one-half {
 width: 40%;
-font-size: .8em;
 margin-top: 20px;
 float: left;
 padding-left:30px;
@@ -747,12 +746,15 @@ a.nivo-nextNav {
 .entry-content {
   font-size: 13px;  
   }
-  
+ 
+#field_1_6 {
+	margin-right:1px;
+}
 /* Gravity Forms Stylings */
 #field_1_7 /*email*/{
-float: left;
-margin: -4.5em 13em 0 20em;
-width: 300px;
+float: right;
+width: 40%;
+margin: -70px 10% 0 0;
 }
 #field_1_8 /*moveindate*/{
   float: left;
@@ -762,6 +764,12 @@ width: 300px;
 #input_1_8 /*moveindate entry*/{
 /*  width: 450px !important;
 */}
+
+#field_1_9 {
+	float: right;
+width: 40%;
+margin: -70px 10% 0 10%;
+	}
 
 .gform_wrapper ul li.gfield {
 /*  clear:none !important;*/
@@ -885,7 +893,6 @@ top: 40%;
 left: 15px;
 width: 40px;
 height: 40px;
-margin-top: -20px;
 font-size: 60px;
 font-weight: 50;
 line-height: 30px;
@@ -984,6 +991,12 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 	display:none;
 }
 
+#myCarousel .carousel-control.right {
+	margin-left:78%;
+	float:left !important;
+	}
+
+
 /****************************************************************************************************************
 Media Queries
 ****************************************************************************************************************/
@@ -991,19 +1004,29 @@ Media Queries
 /*** 979  and down ****/
 
  @media screen and (max-width: 979px)  { 
-.navbar .brand {
-  padding: 10px 20px 10px;
-}
+
 
 }
 
 /**** 979  to 481 ***/
 
  @media screen and (max-width: 979px) and (min-width: 481px)  { 
+ 
+ .navbar .brand {
+  padding: 10px 20px 10px;
+}
+
 
 .navbar .btn-navbar {
   display: none;
 }
+
+#myCarousel .carousel-control.right {
+	margin-left:70%;
+	
+	}
+	
+h1 {color:orange !important;}	
 
 }
 
@@ -1151,11 +1174,18 @@ h1 {color: white;}
   padding: 0;
 }
 
+h1 {color:yellow !important;}
+
+#myCarousel .carousel-control.right {
+	margin-left:90%;
+	}
 
 }
 
 /*** 480 phones and down **/
  @media screen and (max-width: 480px) { 
+ 
+ h1 {color:peach !important;}
  
 .site-info {
   
@@ -1184,6 +1214,11 @@ h1 {color: white;}
 .modal-body {
   max-height: 200px;
 }
+
+#field_1_7 {
+float: right;
+width: 40%;
+margin: -70px 30px 0 0;
 }
 
 /*** media hacks U ***/
@@ -1195,6 +1230,11 @@ h1 {color: white;}
 .modal-header {
   display: none;
 }
+
+#myCarousel .carousel-control.right {
+	margin-left:85%;
+	}
+
 }
 
 
