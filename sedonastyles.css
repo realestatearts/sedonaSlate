@@ -82,7 +82,9 @@ a img {
   border: 0; }
 
 input { 
+/*
   font-size: 1.5em !important;
+  */
   padding: 3px !important;
 }
 
@@ -256,6 +258,7 @@ ul#social-media {
     list-style: none;
   width:50px; 
   margin-top:20px;
+  
 
 }
 
@@ -439,7 +442,9 @@ a.button {
   webkit-border-radius: 3px;
   border-radius: 3px;
   text-transform: uppercase;
-  line-height: 1; }
+  line-height: 1; 
+  width: 212px;
+}
 
 a.button:hover {
   color: #ccc; }
@@ -480,7 +485,7 @@ margin-top: 1em;
 }
     
 
-#section-nav {
+#orange {
   width: 15%;
   float: right; }
 
@@ -500,18 +505,35 @@ margin-top: 1em;
   }
   
   #gform_submit_button_1 {
-  padding:15px 30px !important;
-  font-size:1.1em !important;
+/*  padding:15px 30px !important; */
+  font-size: 12px;
   border:1px solid #ccc;
   border-radius:5px;
   color:#4d4d4d;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),inset 0 15px 17px rgba(255,255,255,0.8),inset 0 -5px 12px rgba(0,0,0,0.02);
+  
+  }
+  
+  #gform_submit_button_1 {
+	background-color: #f37c20;
+	margin: 0 auto 10px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1em;
+	width: 150px;
+	color:#fff;
   }
 
-
+  #map-info {
+  margin: 28px 60px 0 0;
+  width: 20%;
+  float: right;
+}
+#map-info .metro {
+margin-top: 12px;
+}
 /* footer */
 
 footer {
@@ -892,7 +914,7 @@ body.admin-bar .navbar-fixed-top {
   
 }
 .nav-container {
-  background: url('img/header-bg.png') 0 0 repeat;
+  background: url('img/header-bg.png') 154px 0px repeat;
   border-bottom: 10px solid #edd3a8;
   overflow: hidden;
   padding: 0;
@@ -969,6 +991,13 @@ background-color:#bd292c;
   padding: 0;
   }
   
+  .post-19 p, .post-19 li  {font-size:.8em;}
+  .post-19 img {width:50%; float:left; margin-right:20px; margin-bottom:20px;}
+  .post-19 ul {float:right; width:40%;}
+  .post-19 strong {font-weight:bold; font-size:1.4em;}
+   
+  
+  .eco-horizontal {display:none;}
 
   
 .navbar,.navbar-inner {
@@ -1005,7 +1034,7 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 }
 
 	
-	#section-nav {
+#orange{
 	margin-left:60%;
 	float:left;
 }
@@ -1016,6 +1045,7 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 	top: 45px;
 	left: 5px; 
 	position:relative;
+	margin-right:5%;
 	}
 	
 .icon-facebook {
@@ -1046,6 +1076,13 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 	margin-right:20%;
 }	
 
+#_lpChatBtn {
+	position: absolute;
+right: 3%;
+top: 20px;
+margin-left: 10px;
+}
+
 
 /****************************************************************************************************************
 Media Queries
@@ -1066,6 +1103,10 @@ Media Queries
 }
 
 .carousel-control.right {margin-right:25%;}
+
+.gform_wrapper .gform_heading {width:60%; margin-left:20px;}
+.gform_body, #gform_submit_button_1 {margin-left:20px;}
+
 
 
 }
@@ -1231,7 +1272,7 @@ h1 {color: white;}
 
 
 	
-#section-nav {
+#orange {
 	margin-left:80%;
 	float:left;
 }
@@ -1240,6 +1281,14 @@ h1 {color: white;}
  #content {
   background-image:none;
  }
+ 
+ .post-19 img {width:100%;}
+ .post-19 ul, .post-19 li, .post-19 p {float:left; width:95%; margin-left:20px;}
+ .eco-vertical{display:none;}
+ .eco-horizontal {display:block;}
+ 
+.gform_wrapper .gform_heading {width:40%; margin-left:20px;}
+.gform_body, #gform_submit_button_1 {margin-left:20px;}
 
 }
 
