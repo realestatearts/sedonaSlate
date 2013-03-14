@@ -54,9 +54,6 @@ nav,
 section {
   display: block; }
 
-ol, ul {
-  list-style: none; }
-
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
@@ -327,6 +324,11 @@ font-weight: bold;
   width:160px;
   position:absolute;
   }
+  
+ul#menu-second-menu   {
+	list-style:none !important;
+	list-style-image:none !important;
+}
 
 #menu-item-857 a {
   display: inline-block;
@@ -347,6 +349,15 @@ font-weight: bold;
   overflow: hidden;
 }
 
+#menu-item-931 a {
+display: inline-block;
+width: 100px;
+height: 28px;
+background: url("img/sedona-sprite.png") no-repeat 30px -136px;
+text-indent: -999px;
+overflow: hidden;
+
+}
 
 
 #menu-item-890 a {
@@ -883,7 +894,7 @@ body.admin-bar .navbar-fixed-top {
 .nav-container {
   background: url('img/header-bg.png') 0 0 repeat;
   border-bottom: 10px solid #edd3a8;
-  overflow: auto;
+  overflow: hidden;
   padding: 0;
 }
 
@@ -993,10 +1004,6 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 	display:none;
 }
 
-#myCarousel .carousel-control.right {
-	margin-left:78%;
-	float:left !important;
-	}
 	
 	#section-nav {
 	margin-left:60%;
@@ -1006,11 +1013,11 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 #social-media {
 	float:right;
 	width:60px;
-	top: 20px;
-	right: 80px; 
+	top: 45px;
+	left: 5px; 
 	position:relative;
-
 	}
+	
 .icon-facebook {
 	display: block;
 	width: 20px;
@@ -1034,6 +1041,10 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 	margin-right: 2px;
 	position:absolute;
 	}
+	
+.carousel-control.right {
+	margin-right:20%;
+}	
 
 
 /****************************************************************************************************************
@@ -1054,9 +1065,7 @@ Media Queries
   display: none;
 }
 
-#myCarousel .carousel-control.right {
-	margin-left:70%;
-	}
+.carousel-control.right {margin-right:25%;}
 
 
 }
@@ -1064,7 +1073,7 @@ Media Queries
 /* iPads our main breakpoint ----------- */
 @media screen and (max-width : 768px) {
 	
-	
+	.carousel-control.right {margin-right:5%;}
 
 	/*homepage buttons
 	*/
@@ -1221,9 +1230,6 @@ h1 {color: white;}
 }
 
 
-#myCarousel .carousel-control.right {
-	margin-left:90%;
-	}
 	
 #section-nav {
 	margin-left:80%;
@@ -1276,6 +1282,8 @@ width: 40%;
 margin: -70px 30px 0 0;
 }
 
+.carousel-control {top:20% !important;}
+
 /*** media hacks U ***/
 @media screen and (min-width: 370px) and (max-width: 481px) {
 
@@ -1286,9 +1294,8 @@ margin: -70px 30px 0 0;
   display: none;
 }
 
-#myCarousel .carousel-control.right {
-	margin-left:85%;
-	}
+.carousel-control {top:10% !important;}
+
 
 }
 
