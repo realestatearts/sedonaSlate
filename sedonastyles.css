@@ -161,7 +161,7 @@ p {
 
 ul {
   list-style: square;
-  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABdJREFUeNpi3Kupw4ABmBiwAfqKAgQYAKgRASBYa4+9AAAAAElFTkSuQmCC); }
+  list-style-image: url('img/list-box.png');}
 
 
 
@@ -325,6 +325,7 @@ font-weight: bold;
 #menu-second-menu {
   bottom:10px;
   width:160px;
+  position:absolute;
   }
 
 #menu-item-857 a {
@@ -951,11 +952,13 @@ background-color:#bd292c;
 
 /* content container */ 
 #content {
-  background-color:#f5dcc2;
+  background: #f5dcc2 url('img/bg-left.gif') top left repeat-y;background: #f5dcc2 url('img/bg-left.gif') top left repeat-y;
   overflow:hidden;
   position:relative;
   padding: 0;
   }
+  
+
   
 .navbar,.navbar-inner {
   background: none; 
@@ -976,7 +979,6 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 /* position: absolute;
  bottom: 2em;*/
  text-transform:uppercase;
- display:none;
 }
 
 .mobileSplash { 
@@ -995,18 +997,49 @@ div.carousel-inner.contentSlide > div.active.item > .nivo-caption {
 	margin-left:78%;
 	float:left !important;
 	}
+	
+	#section-nav {
+	margin-left:60%;
+	float:left;
+}
+
+#social-media {
+	float:right;
+	width:60px;
+	top: 20px;
+	right: 80px; 
+	position:relative;
+
+	}
+.icon-facebook {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(images/icon-facebook.png) 0 0 no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-right: 2px;
+	position:absolute;
+	left:25px;
+	}
+.icon-twitter {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(images/icon-twitter.png) 0 0 no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-right: 2px;
+	position:absolute;
+	}
 
 
 /****************************************************************************************************************
 Media Queries
 ****************************************************************************************************************/
 
-/*** 979  and down ****/
-
- @media screen and (max-width: 979px)  { 
-
-
-}
 
 /**** 979  to 481 ***/
 
@@ -1023,15 +1056,15 @@ Media Queries
 
 #myCarousel .carousel-control.right {
 	margin-left:70%;
-	
 	}
-	
-h1 {color:orange !important;}	
+
 
 }
 
 /* iPads our main breakpoint ----------- */
 @media screen and (max-width : 768px) {
+	
+	
 
 	/*homepage buttons
 	*/
@@ -1039,7 +1072,7 @@ h1 {color:orange !important;}
 	       list-style-type: none;
 	       margin: 0;
 	}
-	div.mobileSplash > ul#menu-main-menu li {
+	div.mobileSplash.mobStart > ul#menu-main-menu-1.nav li {
 	       background-color:#F9AC1A;
 	       border:5px solid #BE2A2C;
 	       margin:0 auto 10px;
@@ -1048,6 +1081,19 @@ h1 {color:orange !important;}
 	       padding: 1em;
 	       width: 50%;
 	}
+	
+	div.mobileSplash.mobStart > ul#menu-main-menu-1.nav li a {
+		color:#000;
+		font-weight:normal;
+	}
+	
+	div.mobileSplash.mobStart > ul#menu-main-menu-1.nav li a:hover {
+		border:0;
+		background-color:#f9ac1a;
+		font-weight:bold;
+	}
+	
+	
 	div.mobileSplash > ul#menu-main-menu a {
 	       color: #bd292c;
 		   background-color:#f9ac1a;
@@ -1174,22 +1220,31 @@ h1 {color: white;}
   padding: 0;
 }
 
-h1 {color:yellow !important;}
 
 #myCarousel .carousel-control.right {
 	margin-left:90%;
 	}
+	
+#section-nav {
+	margin-left:80%;
+	float:left;
+}
+
+ 
+ #content {
+  background-image:none;
+ }
 
 }
 
 /*** 480 phones and down **/
  @media screen and (max-width: 480px) { 
  
- h1 {color:peach !important;}
  
 .site-info {
   
     }
+	
 .col {
   width: 100%;
 }
